@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to saturnus.tv</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    <div class="content">
+        <h1>saturnus.tv</h1>
+        <h2>the poetic dark night of the soul journey<span class="break"> of a cypherpunk who was here before you</span></h2>
+        <a href="https://journey.saturnus.tv" class="portal-button"><span>ENTER</span></a>
+    </div>
+
+    <div class="disclaimer">disclaimer: this is a personal and open philosophical diary. it serves no purpose other than to document the peculiar journey of 
+        an autistic female engineer and scientist who made her way into a stranger world through her own strength. enter at your own risk.
+    </div>
+    <div class="legal-disclaimer">legal: any visual material related to the author of this publication that is shared outside the scope of this project 
+        is non-consensual and its distribution may be considered illegal under the 
+        <a href="https://www.congress.gov/bill/119th-congress/senate-bill/146" target="_blank">take it down act</a>.
+        unauthorized distribution may be subject to legal action and criminals will be prosecuted.
+        if you know something, <a href="mailto:anon@bt3gl.xyz">say something</a>. 
+    </div>
+
+    <script>
+        const starsContainer = document.getElementById('stars');
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.width = Math.random() * 3 + 'px';
+            star.style.height = star.style.width;
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.animationDelay = Math.random() * 1 + 's';
+            starsContainer.appendChild(star);
+        }
+    </script>
+</body>
+</html> 
